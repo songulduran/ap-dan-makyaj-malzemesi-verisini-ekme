@@ -30,3 +30,4 @@ If/else kontrol yapısı ve koşullu filtreleme. ❓
 DOM manipülasyonu ile kartların ve detay alanının dinamik oluşturulması. 🏗️
 ✨ Bonus Özellikler
 Dark/Light tema desteği, tercihe göre renkler değişir. 🌓
+A-Z Z-A listeleme yöntemi yapar.
