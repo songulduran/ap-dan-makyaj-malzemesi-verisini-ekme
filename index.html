@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ürün Listesi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="temaYukle()">
+    <div class="header">
+      <h1>Kozmetik Ürünleri</h1>
+      <p>API'den makyaj malzemesi verisini çeken tek sayfa uygulaması</p>
+    </div>
+
+    <div class="search-section">
+      <h3>ARAMA / FİLTRE</h3>
+      <input type="text" id="search" placeholder="Arama..." />
+      <button id="fetchBtn">Ara / Listele</button>
+      <button id="themeBtn">Tema Değiştir</button>
+      <br />
+      <select id="filter">
+        <option value="all">Tümü</option>
+        <option value="beauty">Güzellik</option>
+        <option value="fragrances">Parfüm</option>
+      </select>
+      <button id="sortBtn">Sırala (A-Z)</button>
+    </div>
+
+    <div class="status-bar" id="status"></div>
+
+    <div class="cards-section">
+      <h3>KART LİSTESİ</h3>
+      <div class="card-list" id="cardList"></div>
+    </div>
+
+    <div class="detail-section" id="detail">
+      <h3>DETAY PANELİ</h3>
+      <div class="detail-content" id="detailContent"></div>
+    </div>
+
+    <div class="about-section">
+      <h3>HAKKIMIZDA</h3>
+      <p>
+        Bu proje, JavaScript Programlama dersi için final ödevi olarak makyaj
+        malzemesi verilerini çekmek amacıyla DummyJSON API kullanılarak
+        geliştirilmiştir.
+      </p>
+    </div>
+
+    <div class="contact-section">
+      <h3>İLETİŞİM</h3>
+      <p>E-Posta: sngldrn70.1234@gmail.com</p>
+      <p>
+        https://www.linkedin.com/in/songul-duran/ https://github.com/songulduran
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
